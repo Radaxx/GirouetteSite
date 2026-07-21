@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confidentialité — Girouette</title>
+    <meta
+      name="description"
+      content="Politique de confidentialité de l'application Girouette, quiz de géographie française."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="site-brand" href="index.html">
+          <img src="assets/logo.png" alt="" width="36" height="36" />
+          <span>Girouette</span>
+        </a>
+        <nav class="tabs" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="privacy.html" aria-current="page">Confidentialité</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="privacy-wrap">
+      <header>
+        <p class="eyebrow">Confidentialité</p>
+        <h1>Politique de confidentialité</h1>
+        <p class="meta">Dernière mise à jour : 20 juillet 2026</p>
+
+        <nav class="toc" aria-label="Sommaire">
+          <p>Sommaire</p>
+          <ul>
+            <li><a href="#responsable">1. Responsable du traitement</a></li>
+            <li><a href="#donnees">2. Données collectées</a></li>
+            <li><a href="#finalites">3. Finalités et bases légales</a></li>
+            <li><a href="#stockage">4. Stockage et conservation</a></li>
+            <li><a href="#partage">5. Partage et sous-traitants</a></li>
+            <li><a href="#notifications">6. Notifications</a></li>
+            <li><a href="#droits">7. Vos droits</a></li>
+            <li><a href="#mineurs">8. Mineurs</a></li>
+            <li><a href="#modifications">9. Modifications</a></li>
+            <li><a href="#contact">10. Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <article>
+        <section id="responsable">
+          <h2>1. Responsable du traitement</h2>
+          <p>
+            L’application mobile <strong>Girouette</strong> (identifiants
+            <code>com.radaxx.girouette</code>) est un quiz de géographie française.
+            Le responsable du traitement des données personnelles collectées via
+            l’application est l’éditeur de Girouette.
+          </p>
+        </section>
+
+        <section id="donnees">
+          <h2>2. Données collectées</h2>
+          <p>Girouette collecte uniquement les données nécessaires au fonctionnement du jeu.</p>
+
+          <p><strong>Sur votre appareil (stockage local)</strong></p>
+          <ul>
+            <li>Progression de jeu (XP, série de jours, maîtrise des départements)</li>
+            <li>État de l’onboarding et préférences liées aux rappels</li>
+            <li>Pseudo de classement, s’il a été renseigné</li>
+          </ul>
+
+          <p><strong>Sur nos serveurs (via Supabase), uniquement si le classement est activé</strong></p>
+          <ul>
+            <li>Identifiant de session anonyme (aucun compte e-mail ni mot de passe)</li>
+            <li>Pseudo affiché dans le classement</li>
+            <li>Statistiques de jeu publiques : XP, série, nombre de départements maîtrisés</li>
+            <li>Date de dernière mise à jour de l’entrée de classement</li>
+          </ul>
+
+          <div class="callout">
+            <p>
+              Girouette <strong>ne collecte pas</strong> d’adresse e-mail, de nom réel,
+              de numéro de téléphone, de données de localisation GPS, ni de données
+              de paiement. Aucun SDK publicitaire ni outil d’analytique tiers n’est
+              intégré à l’application à la date de cette politique.
+            </p>
+          </div>
+        </section>
+
+        <section id="finalites">
+          <h2>3. Finalités et bases légales</h2>
+          <ul>
+            <li>
+              <strong>Fournir le service de jeu</strong> (progression locale) —
+              exécution du contrat / intérêt légitime lié au fonctionnement de l’app.
+            </li>
+            <li>
+              <strong>Afficher un classement public</strong> (pseudo et scores) —
+              intérêt légitime et consentement implicite lorsque vous choisissez un
+              pseudo et synchronisez votre progression.
+            </li>
+            <li>
+              <strong>Rappels de série</strong> (notifications locales optionnelles) —
+              consentement via l’autorisation système de votre appareil.
+            </li>
+          </ul>
+        </section>
+
+        <section id="stockage">
+          <h2>4. Stockage et conservation</h2>
+          <p>
+            Les données de progression sont stockées localement sur votre appareil
+            (AsyncStorage). Elles restent tant que l’application est installée, ou
+            jusqu’à réinitialisation de la progression / désinstallation.
+          </p>
+          <p>
+            Les données de classement sont hébergées par
+            <a href="https://supabase.com/" rel="noopener noreferrer">Supabase</a>
+            et conservées tant que votre entrée de classement existe. La
+            désinstallation de l’app ne supprime pas automatiquement votre entrée
+            publique ; vous pouvez demander sa suppression (voir section Droits).
+          </p>
+        </section>
+
+        <section id="partage">
+          <h2>5. Partage et sous-traitants</h2>
+          <p>
+            Les entrées du classement (pseudo et scores) sont
+            <strong>publiquement lisibles</strong> par les autres utilisateurs de
+            l’application.
+          </p>
+          <p>
+            Nous utilisons Supabase comme prestataire d’hébergement et
+            d’authentification anonyme. Nous ne vendons pas vos données et ne les
+            partageons pas à des fins publicitaires.
+          </p>
+        </section>
+
+        <section id="notifications">
+          <h2>6. Notifications</h2>
+          <p>
+            Si vous l’autorisez, Girouette peut planifier un
+            <strong>rappel local quotidien</strong> (vers 18 h) pour entretenir
+            votre série. Ces notifications sont gérées sur l’appareil ; aucun jeton
+            de notification push n’est envoyé à nos serveurs dans la version
+            actuelle de l’application.
+          </p>
+          <p>
+            Vous pouvez retirer l’autorisation à tout moment dans les réglages de
+            votre appareil.
+          </p>
+        </section>
+
+        <section id="droits">
+          <h2>7. Vos droits</h2>
+          <p>
+            Conformément au RGPD (si applicable), vous disposez notamment des droits
+            d’accès, de rectification, d’effacement, de limitation et d’opposition.
+          </p>
+          <ul>
+            <li>
+              <strong>Données locales :</strong> réinitialisez la progression dans
+              l’app, ou désinstallez l’application.
+            </li>
+            <li>
+              <strong>Pseudo / classement :</strong> modifiez votre pseudo dans
+              l’app, ou contactez-nous pour demander la suppression de votre entrée.
+            </li>
+          </ul>
+          <p>
+            Vous pouvez également introduire une réclamation auprès de la
+            <a href="https://www.cnil.fr/" rel="noopener noreferrer">CNIL</a>.
+          </p>
+        </section>
+
+        <section id="mineurs">
+          <h2>8. Mineurs</h2>
+          <p>
+            Girouette est un jeu éducatif destiné à un large public. Nous ne
+            collectons pas sciemment de données permettant d’identifier
+            directement un enfant. Si vous estimez qu’une donnée concernant un
+            mineur doit être supprimée, contactez-nous.
+          </p>
+        </section>
+
+        <section id="modifications">
+          <h2>9. Modifications</h2>
+          <p>
+            Cette politique peut être mise à jour pour refléter des changements
+            dans l’application ou la réglementation. La date en tête de page
+            indique la dernière révision. En cas de changement substantiel, nous
+            nous efforcerons d’en informer les utilisateurs de manière appropriée.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>10. Contact</h2>
+          <p>
+            Pour toute question relative à cette politique ou pour exercer vos
+            droits, ouvrez une issue sur le dépôt GitHub du projet&nbsp;:
+            <a href="https://github.com/Radaxx/Girouette/issues"
+              >github.com/Radaxx/Girouette/issues</a
+            >.
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <footer class="site-footer">
+      <p>© 2026 Girouette</p>
+      <p>
+        <a href="index.html">Accueil</a>
+        ·
+        <a href="https://github.com/Radaxx/Girouette" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>
