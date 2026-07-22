@@ -35,7 +35,7 @@
       <header>
         <p class="eyebrow">Confidentialité</p>
         <h1>Politique de confidentialité</h1>
-        <p class="meta">Dernière mise à jour : 20 juillet 2026</p>
+        <p class="meta">Dernière mise à jour : 22 juillet 2026</p>
 
         <nav class="toc" aria-label="Sommaire">
           <p>Sommaire</p>
@@ -84,12 +84,33 @@
             <li>Date de dernière mise à jour de l’entrée de classement</li>
           </ul>
 
+          <p><strong>Mesure d’audience et diagnostic technique (PostHog, Expo/EAS)</strong></p>
+          <ul>
+            <li>
+              Événements d’usage anonymisés (session de quiz terminée, leçon
+              complétée, badge débloqué, étape du Parcours franchie) et rapports de
+              plantage (erreurs JavaScript non interceptées), associés à un
+              identifiant anonyme généré par l’app — via
+              <a href="https://posthog.com/" rel="noopener noreferrer">PostHog</a>
+              (hébergé dans l’Union européenne).
+            </li>
+            <li>
+              Métriques techniques de performance (temps de démarrage, temps
+              d’affichage des écrans, temps de téléchargement des mises à jour de
+              l’application) et statistiques d’usage agrégées (nombre de
+              lancements par version), sans identifiant personnel — via les
+              services <a href="https://expo.dev/eas" rel="noopener noreferrer">EAS</a>
+              d’Expo (Expo Application Services).
+            </li>
+          </ul>
+
           <div class="callout">
             <p>
               Girouette <strong>ne collecte pas</strong> d’adresse e-mail, de nom réel,
               de numéro de téléphone, de données de localisation GPS, ni de données
-              de paiement. Aucun SDK publicitaire ni outil d’analytique tiers n’est
-              intégré à l’application à la date de cette politique.
+              de paiement. Aucun SDK publicitaire n’est intégré à l’application.
+              Les événements d’usage et de performance décrits ci-dessus ne sont
+              jamais rattachés à votre identité.
             </p>
           </div>
         </section>
@@ -109,6 +130,11 @@
             <li>
               <strong>Rappels de série</strong> (notifications locales optionnelles) —
               consentement via l’autorisation système de votre appareil.
+            </li>
+            <li>
+              <strong>Mesurer l’usage, diagnostiquer les bugs et améliorer les
+              performances</strong> (PostHog, Expo/EAS) — intérêt légitime lié à
+              l’amélioration du service.
             </li>
           </ul>
         </section>
@@ -138,8 +164,12 @@
           </p>
           <p>
             Nous utilisons Supabase comme prestataire d’hébergement et
-            d’authentification anonyme. Nous ne vendons pas vos données et ne les
-            partageons pas à des fins publicitaires.
+            d’authentification anonyme, PostHog pour la mesure d’audience et le
+            diagnostic technique (données hébergées dans l’Union européenne), et
+            les services EAS d’Expo (Expo Application Services, États-Unis) pour
+            les mises à jour de l’application et les métriques de performance.
+            Nous ne vendons pas vos données et ne les partageons pas à des fins
+            publicitaires.
           </p>
         </section>
 
